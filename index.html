@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Board</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__navbar ">
+                <div class="header__timer">
+                    <i class="icon-timer"></i>
+                    <span class="header__text">Timer</span>
+                </div>
+                <div class="header__search">
+                    <i class="icon-search"></i>
+                    <input type="text" id='searchInput' class="header__search__input" placeholder="Search">
+                </div>
+                <div class="header__newUser d-flex">
+                    <select name="" id="" class="header__newUser__select">
+                        <option value="" selected class="header__newUser__option">New</option>
+                    </select>
+                    <i class="icon-bell"></i>
+                    <span class="header__newUser__name">Nick Robins</span>
+                </div>
+            </div>
+        </header>
+
+        <aside class="sidebar ">
+            <div class="row"> <!-- + -->
+               
+                <div class="sidebar__logo "><img src="images/Logo.png" alt=""></div>
+                <i class="icon-x col-auto" id="close-sidebar"></i>
+            </div>
+
+            <div class="menu-item openMenuItem">
+                <a href="#" class="menu-item__link" id="sub-menu__item">
+                    <i class="icon-clock leftIcon"></i>
+                    <span class="menu-item__text">Recently accessed</span>
+                    <i class="icon-circle-down toggle-up" id="bottom"></i>
+                </a>
+                <div class="sub-menu" id="submenu">
+                    <a href="" class="sub-menu__link">Project K</a>
+                    <a href="" class="sub-menu__link">Project A</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <a href="#" class="menu-item__link">
+                    <i class="icon-calendar leftIcon"></i>
+                    <span class="menu-item__text">Boards</span>
+                </a>
+            </div>
+
+            <div class="menu-item">
+                <a href="#" class="menu-item__link redDot">
+                    <img class="menu-item__star" src="images/Star.svg" alt="">
+                    <span class="menu-item__text">Following</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="#" class="menu-item__link">
+                    <i class="icon-timer leftIcon"></i>
+                    <span class="menu-item__text">Time Records</span>
+                </a>
+            </div>
+            <div class="menu-item activeMenu">
+                <a href="#" class="menu-item__link activeMenuText redDot">
+                    <i class="icon-users leftIcon"></i>
+                    <span class="menu-item__text ">Members</span>
+                </a>
+            </div>
+            <div class="menu-item">
+                <a href="" class="menu-item__link">
+                    <i class="icon-setting leftIcon"></i>
+                    <span class="menu-item__text">Settings</span>
+                </a>
+            </div>
+        </aside>
+
+        <section class="content ">
+            <h1 class="content__title">Members</h1>
+
+            <ul class="navbar__nav d-flex">
+                <li class="nav-item activee">
+                    <a class="nav-link" href="#" data-type='0'>Members</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-type='1'>Teams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-type='2'>Pending</a>
+                </li>
+            </ul>
+
+            <div class="container">
+                <div class="row">
+                    <div class=" cards d-flex" id="cards">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- The Modal -->
+    <!-- <div class="modal"> -->
+    <div class="modall" id="myModal">
+        <a href="">Assign task</a>
+        <a href="">View time records</a>
+        <a href="">Remove</a>
+    </div>
+    <!-- </div> -->
+
+    <script src="main.js"></script>
+</body>
+
+</html>
